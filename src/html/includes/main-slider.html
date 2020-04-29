@@ -1,0 +1,26 @@
+<div class="header__slider main-slider">
+    <div class="swiper-container main-slider__container">
+        <div class="swiper-wrapper main-slider__wrapper">
+            <div class="swiper-slide main-slider__slide">
+                <img src="../../uploads/main-slider/1.jpg" alt="">
+            </div>
+            <div class="swiper-slide main-slider__slide">
+                <img src="../../uploads/main-slider/2.jpg" alt="">
+            </div>
+        </div>
+        <div class="swiper-pagination main-slider__pagination"></div>
+    </div>
+</div>
+
+<script>
+  new Swiper('.main-slider__container', {
+    loop: true,
+
+    pagination: {
+      el: '.main-slider__pagination',
+      type: 'bullets',
+      clickable: true,
+    },
+
+  })
+</script>

@@ -1,0 +1,174 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.bundle.css"/>
+    <title>Document</title>
+    <!--    ////////////-->
+
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+</head>
+<body>
+<div class="page">
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+
+                <a href="" class="header__logo logo">
+                    <img class="logo__image" src="../../img/logo.png" alt="">
+                </a>
+                <div class="header__content">
+                    <form action="" class="header__search search-block">
+                        <label>
+                            <input class="search-block__field" type="text"
+                                   placeholder="Поиск по модели, обозначению, году, VPN и т.д.">
+                        </label>
+                        <input class="search-block__btn" type="submit" value="Поиск">
+                    </form>
+                    <div class="header__auth auth-block">
+                        <a href="" class="auth-block__link">Вход</a>
+                        &nbsp;/&nbsp;
+                        <a href="" class="auth-block__link">Регистрация</a>
+                    </div>
+                    <div class="header__basket basket-block">
+                        <a href="" class="basket-block__link basket-block__link--favorite">
+                            Избранное
+                        </a>
+                        <a href="" class="basket-block__link basket-block__link--basket basket-link">
+                            Корзина
+                            <span class="basket-link__count">3</span>
+                        </a>
+                    </div>
+                    <div class="header__phones phones-block-v1">
+                        <a href="" class="phones-block-v1__item"> 8 (3513) 55 53 11</a>
+                        <a href="" class="phones-block-v1__item"> 8 (3513) 55 53 77</a>
+                    </div>
+                    <nav class="header__nav">
+                        <ul class="header__main-menu main-menu">
+                            <li class="main-menu__item"><a href="" class="main-menu__link">Цены и скидки</a></li>
+                            <li class="main-menu__item"><a href="" class="main-menu__link">Оплата</a></li>
+                            <li class="main-menu__item"><a href="" class="main-menu__link">Доставка</a></li>
+                            <li class="main-menu__item"><a href="" class="main-menu__link">О компании</a></li>
+                            <li class="main-menu__item"><a href="" class="main-menu__link">Контакты</a></li>
+                        </ul>
+                        <ul class="header__catalog top-catalog">
+                            <li class="top-catalog__item"><a href="" class="top-catalog__link">Запасные части Урал</a>
+                            </li>
+                            <li class="top-catalog__item"><a href="" class="top-catalog__link">Сувенирная продукция</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+<div class="header__slider main-slider">
+    <div class="swiper-container main-slider__container">
+        <div class="swiper-wrapper main-slider__wrapper">
+            <div class="swiper-slide main-slider__slide">
+                <img src="../../uploads/main-slider/1.jpg" alt="">
+            </div>
+            <div class="swiper-slide main-slider__slide">
+                <img src="../../uploads/main-slider/2.jpg" alt="">
+            </div>
+        </div>
+        <div class="swiper-pagination main-slider__pagination"></div>
+    </div>
+</div>
+
+<script>
+  new Swiper('.main-slider__container', {
+    loop: true,
+
+    pagination: {
+      el: '.main-slider__pagination',
+      type: 'bullets',
+      clickable: true,
+    },
+
+  })
+</script>
+
+<div class="container">
+    <div class="main-page__promo promo-blocks">
+        <a href="" class="promo-blocks__item promo-block promo-block--special">
+            <div class="promo-block__title">Спец предложения</div>
+        </a>
+        <a href="" class="promo-blocks__item promo-block promo-block--popular">
+            <div class="promo-block__title">Популярные запасные части</div>
+        </a>
+        <a href="" class="promo-blocks__item promo-block promo-block--actions">
+            <div class="promo-block__title">Акции</div>
+        </a>
+    </div>
+</div>
+
+
+</div> <!-- end .page -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <a href="" class="footer__logo logo">
+                <img class="logo__image" src="../../img/logo.png" alt="">
+                <span class="logo__text">Продажа запасных частей<br>к автомобилям Урал</span>
+            </a>
+            <div class="footer__phones phones-block-v1">
+                <a href="" class="phones-block-v2__item"> 8 (3513) 55 53 11</a>
+                <a href="" class="phones-block-v2__item"> 8 (3513) 55 53 77</a>
+            </div>
+            <div class="footer__menus">
+                <nav class="footer__nav">
+                    <ul class="footer_main-menu bottom-menu">
+                        <li class="bottom-menu__item"><a href="" class="bottom-menu__link">Главная</a></li>
+                        <li class="bottom-menu__item"><a href="" class="bottom-menu__link">Цены и скидки</a></li>
+                        <li class="bottom-menu__item"><a href="" class="bottom-menu__link">Оплата</a></li>
+                        <li class="bottom-menu__item"><a href="" class="bottom-menu__link">Доставка</a></li>
+                        <li class="bottom-menu__item"><a href="" class="bottom-menu__link">О компании</a></li>
+                        <li class="bottom-menu__item"><a href="" class="bottom-menu__link">Контакты</a></li>
+                    </ul>
+                    <ul class="footer__catalog bottom-catalog">
+                        <li class="bottom-catalog__item"><a href="" class="bottom-catalog__link">Запасные части Урал</a>
+                        </li>
+                        <li class="bottom-catalog__item"><a href="" class="bottom-catalog__link">Сувенирная
+                            продукция</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="footer__middle">
+            <div class="footer__company">
+                ООО "Объединённая Машиностроительная Группа"
+            </div>
+            <div class="footer__socials socials-block">
+                <a href="" class="socials-block__item socials-block__item--fb"></a>
+                <a href="" class="socials-block__item socials-block__item--vk"></a>
+                <a href="" class="socials-block__item socials-block__item--in"></a>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="footer__law law-block">
+                <a href="" class="law-block__item">Пользовательское соглашение</a>
+                <a href="" class="law-block__item">Политика в обработке персональных данных</a>
+            </div>
+            <div class="footer__copyright">Разработка сайта <a href="">Иторум</a></div>
+            <div class="footer__year">
+                &copy;2020
+            </div>
+        </div>
+    </div>
+
+</footer>
+<script src="js/bundle.js"></script>
+</body>
+
+</html>
