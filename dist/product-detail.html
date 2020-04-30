@@ -69,20 +69,20 @@
         </div>
 
     </header>
-<ul class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+<div class="container">
+    <ul class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
     <li class="breadcrumbs__item" itemprop="itemListElement" itemscope
         itemtype="http://schema.org/ListItem">
         <a href="" class="breadcrumbs__link" itemprop="item">
             <span itemprop="name">Главная</span>
-        </a>
+        </a><span class="breadcrumbs__delimiter">></span>
         <meta itemprop="position" content="1"/>
     </li>
     <li class="breadcrumbs__item" itemprop="itemListElement" itemscope
         itemtype="http://schema.org/ListItem">
         <a href="" class="breadcrumbs__link" itemprop="item">
-
             <span itemprop="name">Запасные части</span>
-        </a>
+        </a><span class="breadcrumbs__delimiter">></span>
         <meta itemprop="position" content="2"/>
     </li>
     <li class="breadcrumbs__item" itemprop="itemListElement" itemscope
@@ -93,7 +93,12 @@
         <meta itemprop="position" content="3"/>
     </li>
 </ul>
-<aside class="sidebar">
+</div>
+
+
+<div class="container">
+    <div class="page page--has-sidebar">
+        <aside class="sidebar">
     <nav class="sidebar__nav">
         <ul class="sidebar__catalog-menu catalog-menu">
             <li class="catalog-menu__item">
@@ -112,7 +117,7 @@
                         <a href="" class="catalog-submenu__link">Оперение</a>
                     </li>
                     <li class="catalog-submenu__item">
-                        <a href="" class="catalog-submenu__link">Основание (пол)</a>
+                        <a href="" class="catalog-submenu__link catalog-submenu__link--active">Основание (пол)</a>
                     </li>
                     <li class="catalog-submenu__item">
                         <a href="" class="catalog-submenu__link">Окно ветровое</a>
@@ -156,50 +161,113 @@
         </ul>
     </nav>
 </aside>
-<div class="product-detail">
-    <h1 class="product-detail__title">Картер и кожух полуосей среднего моста</h1>
-    <div class="product-detail__images images-product">
-        <div class="images-product__main">
-            product slider here...
-        </div>
-        <div class="images-product__thumb">
-            Thumb here...
-        </div>
-    </div>
-    <div class="product-detail__info info-product">
-        <button class="info-product__add-favorite add-favorite-btn">В избранное</button>
-        <div class="info-product__description">
-            Картер и кожух полуосей среднего моста (подвеска редуктора среднего первого моста)
-        </div>
-        <div class="info-product__params params-product">
-            <div class="params-product__item item-param">
-                <span class="item-param__name">Вес:</span>
-                <span class="item-param__value">25 кг</span>
-            </div>
-            <div class="params-product__item item-param">
-                <span class="item-param__name">Материал:</span>
-                <span class="item-param__value">Алюминий</span>
-            </div>
-            <div class="params-product__item item-param">
-                <span class="item-param__name">Габаритные размеры:</span>
-                <span class="item-param__value">25*25*25 см</span>
-            </div>
+        <div class="content">
+            <div class="product-detail">
+                <h1 class="product-detail__title">Картер и кожух полуосей среднего моста</h1>
 
+                <div class="product-detail__inner">
+                    <div class="product-detail__images images-product-wrapper">
+                        <div class="images-product-thumbs">
+                            <div class="swiper-container images-product-thumbs__container">
+                                <div class="swiper-wrapper images-product-thumbs__wrapper">
+                                    <div class="swiper-slide images-product-thumbs__slide">
+                                        <img src="uploads/product-detail/1.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide images-product-thumbs__slide">
+                                        <img src="uploads/product-detail/1.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide images-product-thumbs__slide">
+                                        <img src="uploads/product-detail/1.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="images-product">
+                            <div class="swiper-container images-product__container">
+                                <div class="swiper-wrapper images-product__wrapper">
+                                    <div class="swiper-slide images-product__slide">
+                                        <img src="uploads/product-detail/1.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide images-product__slide">
+                                        <img src="uploads/product-detail/1.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide images-product__slide">
+                                        <img src="uploads/product-detail/1.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                      var galleryThumbs = new Swiper('.images-product-thumbs__container', {
+                        spaceBetween: 10,
+                        slidesPerView: 4,
+                        freeMode: true,
+                        watchSlidesVisibility: true,
+                        watchSlidesProgress: true,
+                        direction: 'vertical',
+                      })
+                      var galleryTop = new Swiper('.images-product__container', {
+                        spaceBetween: 10,
+                        navigation: {
+                          nextEl: '.swiper-button-next',
+                          prevEl: '.swiper-button-prev',
+                        },
+                        thumbs: {
+                          swiper: galleryThumbs,
+                        },
+                      })
+                    </script>
+                        <div class="product-detail__info info-product">
+                            <button class="info-product__add-favorite add-favorite-btn">В избранное</button>
+                            <div class="info-product__description">
+                                Картер и кожух полуосей среднего моста (подвеска редуктора среднего первого моста)
+                            </div>
+                            <div class="info-product__params params-product">
+                                <div class="params-product__item item-param">
+                                    <span class="item-param__name">Вес:</span>
+                                    <span class="item-param__value">25 кг</span>
+                                </div>
+                                <div class="params-product__item item-param">
+                                    <span class="item-param__name">Материал:</span>
+                                    <span class="item-param__value">Алюминий</span>
+                                </div>
+                                <div class="params-product__item item-param">
+                                    <span class="item-param__name">Габаритные размеры:</span>
+                                    <span class="item-param__value">25*25*25 см</span>
+                                </div>
+
+                            </div>
+                            <div class="info-product__links">
+                                <a href="" class="info-product__guarantee">
+                                    Гарантийные обязательства
+                                </a>
+                                <a href="" class="info-product__call-manager">
+                                    Связаться с менеджером
+                                </a>
+                            </div>
+                            <div class="info-product__prices prices-product">
+                                <div class="prices-product__item price-product">5 248,23 руб.</div>
+<!--                                <div class="prices-product__item price-product prices-product&#45;&#45;old">6 000,00 руб.</div>-->
+                            </div>
+                            <div class="info-product__actions">
+                                <button type="button" class="info-product__add-to-basket add-to-basket add-to-basket--product-detail">
+                                    В корзину
+                                </button>
+                            </div>
+                        </div>
+
+                </div>
+
+
+            </div>
         </div>
+
     </div>
-    <div class="info-product__links">
-        <a href="" class="info-product__guarantee">
-            Гарантийные обязательства
-        </a>
-        <a href="" class="info-product__call-manager">
-            Связаться с менеджером
-        </a>
-    </div>
-    <div class="info-product__prices prices-product">
-        <div class="prices-product__item prices-product">5 248,23 руб.</div>
-        <div class="prices-product__item prices-product prices-product--old">6 000,00 руб.</div>
-    </div>
+
 </div>
+
 
 </div> <!-- end .page -->
 <footer class="footer">
