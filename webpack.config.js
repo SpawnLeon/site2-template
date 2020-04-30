@@ -15,7 +15,7 @@ function generateHtmlPlugins (templateDir) {
     return new HtmlWebpackPlugin({
       filename: `${name}.html`,
       template: path.resolve(__dirname, `${templateDir}/${name}.${extension}`),
-      inject: false,
+      inject: true,
     })
   })
 }
@@ -57,21 +57,15 @@ const config = {
           {
             loader: 'postcss-loader',
             options: {
-              ident: 'postcss',
               sourceMap: true,
-              plugins: () => [
-                require('cssnano')({
-                  preset: [
-                    'default',
-                    {
-                      discardComments: {
-                        removeAll: true,
-                      },
-                    },
-                  ],
-                }),
-              ],
+              config: {
+                path: `./postcss.config.js`,
+              },
             },
+          },
+          {
+            loader: 'resolve-url-loader',
+            options: {},
           },
           {
             loader: 'sass-loader',
@@ -84,7 +78,11 @@ const config = {
       {
         test: /\.html$/,
         include: path.resolve(__dirname, 'src/html/includes'),
-        use: ['raw-loader'],
+        use: [
+          {
+            loader: 'raw-loader',
+          },
+        ],
       },
     ],
   },

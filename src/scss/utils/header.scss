@@ -1,6 +1,7 @@
 .header {
   position : relative;
   z-index  : 2;
+  display  : grid;
 
   // .header__inner
   &__inner {
@@ -37,7 +38,7 @@
       content          : '';
       width            : 11px;
       height           : 14px;
-      background-image : url(../img/i-auth.svg);
+      background-image : url(../../img/i-auth.svg);
       margin-right     : 5px;
     }
   }
@@ -113,7 +114,7 @@
       &::before {
         width            : 17px;
         height           : 19px;
-        background-image : url(../img/temp/4.jpg);
+        background-image : url(../../img/i-basket.svg);
       }
     }
 
@@ -122,7 +123,7 @@
       &::before {
         width            : 13px;
         height           : 19px;
-        background-image : url(../img/temp/5.jpg);
+        background-image : url(../../img/i-favorite.jpg);
       }
     }
   }
@@ -158,7 +159,7 @@
   &__btn {
     text-indent         : -9999px;
     position            : absolute;
-    background-image    : url(../img/i-search.svg);
+    background-image    : url(../../img/i-search.svg);
     background-repeat   : no-repeat;
     background-color    : transparent;
     background-position : center;
@@ -258,7 +259,7 @@
       margin-right     : 8px;
       height           : 10px;
       display          : inline-block;
-      background-image : url(../img/i-burger.svg);
+      background-image : url(../../img/i-burger.svg);
       min-width        : 9px;
     }
   }
