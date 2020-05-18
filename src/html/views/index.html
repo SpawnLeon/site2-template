@@ -3,8 +3,8 @@ title: "Заголовок | Проект",
 
 }; %>
 <%= _.template(require('./../includes/header.html').default)(data) %>
-<%= _.template(require('./../includes/main-slider.html').default)(data) %>
-<div class="container">
+<div class="container main-page">
+  <%= _.template(require('./../includes/main-slider.html').default)(data) %>
     <div class="main-page__promo promo-blocks">
         <a href="" class="promo-blocks__item promo-block promo-block--special">
             <div class="promo-block__title">Спец предложения</div>

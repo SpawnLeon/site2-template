@@ -1,6 +1,6 @@
 .sidebar {
-  margin-right: 12px;
-  max-width: 154px;
+  margin-right : 12px;
+  max-width    : 154px;
 
   // .sidebar__nav
   &__nav {
@@ -8,11 +8,13 @@
 
   // .sidebar__catalog-menu
   &__catalog-menu {
+    margin-top : 120px;
   }
 }
 
 .catalog-menu {
   font-size : 16px;
+  padding   : 0;
 
   // .catalog-menu__item
   &__item {
@@ -25,6 +27,17 @@
   // .catalog-menu__link
   &__link {
     display : block;
+    padding : 0 0 0 5px;
+
+    // .catalog-menu__link--active
+    &:active,
+    &:focus,
+    &:hover,
+    &--active {
+      background-color : #0163aa;
+      color            : #fff;
+      text-decoration  : none;
+    }
   }
 
   // .catalog-menu__catalog-submenu
@@ -33,11 +46,11 @@
 }
 
 .catalog-submenu {
-  padding-top: 5px;
+  padding : 5px 0 0 12px;
+
   // .catalog-submenu__item
   &__item {
     margin-bottom : 7px;
-
   }
 
   // .catalog-submenu__link
@@ -47,9 +60,13 @@
     display      : block;
 
     // .catalog-submenu__link--active
+    &:active,
+    &:focus,
+    &:hover,
     &--active {
       background-color : #0163aa;
       color            : #fff;
+      text-decoration  : none;
     }
   }
 }

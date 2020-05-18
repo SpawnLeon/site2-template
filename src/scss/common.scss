@@ -45,15 +45,15 @@ button {
 }
 
 a {
-  text-decoration : none;
-  color           : $default-color;
-}
+  text-decoration          : none;
+  color                    : $default-color;
+  text-decoration-skip-ink : none;
 
-ul,
-li {
-  margin          : 0;
-  padding         : 0;
-  list-style-type : none;
+  &:active,
+  &:focus,
+  &:hover {
+    color : $default-color;
+  }
 }
 
 section,
@@ -90,6 +90,8 @@ section,
   position  : relative;
   margin    : 0 auto;
   max-width : $desktopWidth;
+  padding   : 0 $desktopGutter;
+
   @media screen and (max-width : $smDesktopWidth) {
     max-width : tableWidth;
   }
@@ -128,5 +130,5 @@ section,
 }
 
 .sidebar + .content {
-  max-width : calc(100%  - 12px - 154px);
+  max-width : calc(100% - 12px - 154px);
 }

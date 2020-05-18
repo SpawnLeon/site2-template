@@ -7,12 +7,6 @@
 
 /* Remove default margin */
 body,
-h1,
-h2,
-h3,
-h4,
-p,
-li,
 figure,
 figcaption,
 blockquote,
@@ -76,15 +70,6 @@ select {
 
 /*******************/
 
-// Headlines
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: normal;
-}
 
 :focus {
   outline: 0;

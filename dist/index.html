@@ -18,12 +18,12 @@
         <div class="container">
             <div class="header__inner">
 
-                <a href="" class="header__logo logo">
+                <a href="/" class="header__logo logo">
                     <img class="logo__image" src="img/logo.png" alt="">
                 </a>
                 <div class="header__content">
                     <form action="" class="header__search search-block">
-                        <label>
+                        <label class="search-block__label">
                             <input class="search-block__field" type="text"
                                    placeholder="Поиск по модели, обозначению, году, VPN и т.д.">
                         </label>
@@ -44,8 +44,8 @@
                         </a>
                     </div>
                     <div class="header__phones phones-block-v1">
-                        <a href="" class="phones-block-v1__item"> 8 (3513) 55 53 11</a>
-                        <a href="" class="phones-block-v1__item"> 8 (3513) 55 53 77</a>
+                        <a href="tel:83513555311" class="phones-block-v1__item"> 8 (3513) 55 53 11</a>
+                        <a href="tel:83513555377" class="phones-block-v1__item"> 8 (3513) 55 53 77</a>
                     </div>
                     <nav class="header__nav">
                         <ul class="header__main-menu main-menu">
@@ -69,7 +69,9 @@
         </div>
 
     </header>
-<div class="header__slider main-slider">
+
+<div class="container main-page">
+  <div class="header__slider main-slider">
     <div class="swiper-container main-slider__container">
         <div class="swiper-wrapper main-slider__wrapper">
             <div class="swiper-slide main-slider__slide">
@@ -83,20 +85,6 @@
     </div>
 </div>
 
-<script>
-  new Swiper('.main-slider__container', {
-    loop: true,
-
-    pagination: {
-      el: '.main-slider__pagination',
-      type: 'bullets',
-      clickable: true,
-    },
-
-  })
-</script>
-
-<div class="container">
     <div class="main-page__promo promo-blocks">
         <a href="" class="promo-blocks__item promo-block promo-block--special">
             <div class="promo-block__title">Спец предложения</div>
@@ -115,7 +103,7 @@
 <footer class="footer">
     <div class="container">
         <div class="footer__top">
-            <a href="" class="footer__logo logo">
+            <a href="/" class="footer__logo logo">
                 <img class="logo__image" src="img/logo.png" alt="">
                 <span class="logo__text">Продажа запасных частей<br>к автомобилям Урал</span>
             </a>
@@ -169,6 +157,7 @@
 
 </footer>
 
-<script type="text/javascript" src="./js/bundle.js"></script></body>
+<script type="text/javascript" src="./js/1.bundle.js"></script><script type="text/javascript" src="./js/bundle.js"></script></body>
 
 </html>
+
